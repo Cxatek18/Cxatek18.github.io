@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  margin-top: -22px;
+}
+
+.preloader__fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(/img/load_main/1.png);
+  width: 100%;
+  height: 935px;
+  background-position: center;
+}
+
+.preloader__fon img {
+  margin-top: 300px;
+  height: 300px;
+}
+
+.main {
+  position: relative;
+}
+
+.main__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.main__one {
+  background: #b40000;
+  max-width: 500px;
+  height: 450px;
+  margin: 0 auto;
+  margin-bottom: -10px;
+  border-radius: 0 0 20px 20px;
+}
+
+.main__two {
+  background: #b40000;
+  max-width: 500px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: -10px;
+  border-radius: 0 0 20px 20px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.main__follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__follow svg {
+  position: absolute;
+  top: -110px;
+  color: #000;
+}
+
+.main__follow svg:hover {
+  color: #fcbd35;
+  cursor: pointer;
+}
+
+.main__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.main__score__plus {
+  width: 70px;
+  height: 50px;
+  color: #fff;
+}
+
+.main__score__plus:hover {
+  cursor: pointer;
+  color: #fcbd35;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__score__minus {
+  width: 70px;
+  height: 50px;
+  color: #fff;
+}
+
+.main__score__minus:hover {
+  color: #fcbd35;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__score__number {
+  color: #fff;
+  font-weight: 600px;
+  font-size: 180px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.main__subtitle {
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-top: -40px;
+}
+
+.main__button {
+  position: relative;
+  top: -40px;
+  left: 10px;
+}
+
+.main__button__lightning {
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+}
+
+.main__button__lightning svg {
+  width: 30px;
+  height: 38px;
+  margin: 10px;
+}
+
+.main__button__lightning:hover {
+  color: #fcbd35;
+  cursor: pointer;
+}
+
+.main__coube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.main__coube img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
+}
+
+.shake:keyframes 0% {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.shake:keyframes 50% {
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+.shake:keyframes 100% {
+  -webkit-transform: rotate(-100deg);
+          transform: rotate(-100deg);
+}
+
+.cart_1 {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.cart_1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.cart_1-wrapper {
+  background-image: url(/img/load_main/13.png);
+  background-position: center;
+  background-size: 100%;
+  width: 500px;
+  height: 900px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.cart_1-subtitle {
+  color: #FFD75E;
+  font-size: 36px;
+}
+
+.cart_1-title {
+  font-size: 42px;
+  color: #fff;
+  margin-top: 150px;
+}
+
+.cart_1 .one {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.cart_1-img {
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+}
+
+.display_cart {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

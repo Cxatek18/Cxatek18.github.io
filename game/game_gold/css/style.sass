@@ -1,0 +1,173 @@
+body
+  margin: 0
+  padding: 0
+
+img
+  max-width: 100%
+  margin: 0 auto
+
+.container
+  max-width: 100%
+  margin: 0 auto
+
+// style preloader
+.preloader
+  width: 100%
+  height: 100%
+  z-index: 1
+  position: fixed
+  margin-top: -22px
+  &__fon
+    display: flex
+    justify-content: center
+    background-image: url(/img/load_main/1.png)
+    width: 100%
+    height: 935px
+    background-position: center
+    img
+      margin-top: 300px
+      height: 300px
+
+// style main
+.main
+  position: relative
+  &__wrapper
+    width: 100%
+    height: 100%
+    background-color: #000
+  &__one
+    background: #b40000
+    max-width: 500px
+    height: 450px
+    margin: 0 auto
+    margin-bottom: -10px
+    border-radius: 0 0 20px 20px
+  &__two
+    background: #b40000
+    max-width: 500px
+    height: 450px
+    margin: 0 auto
+    margin-top: -10px
+    border-radius: 0 0 20px 20px
+    transform: rotate(-180deg)
+  &__follow
+    display: flex
+    transform: rotate(-180deg)
+    width: 45px
+    height: 45px
+    margin: 0 auto
+    position: relative
+    svg
+      position: absolute
+      top: -110px
+      color: #000
+      &:hover
+        color: #fcbd35
+        cursor: pointer
+  &__score
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 100px
+    &__plus
+      width: 70px
+      height: 50px
+      color: #fff
+      &:hover
+        cursor: pointer
+        color: #fcbd35
+        transition: 0.5s
+    &__minus
+      width: 70px
+      height: 50px
+      color: #fff
+      &:hover
+        color: #fcbd35
+        cursor: pointer
+        transition: 0.5s
+    &__number
+      color: #fff
+      font-weight: 600px
+      font-size: 180px
+      transform: rotate(-180deg)
+  &__subtitle
+    text-align: center
+    font-size: 10px
+    color: #fff
+    transform: rotate(-180deg)
+    margin-top: -40px
+  &__button
+    position: relative
+    top: -40px
+    left: 10px
+    &__lightning
+      position: absolute
+      border-radius: 50%
+      background: transparent
+      border: none
+      svg
+        width: 30px
+        height: 38px
+        margin: 10px
+      &:hover
+        color: #fcbd35
+        cursor: pointer
+  &__coube    
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    width: 100px
+    height: 100px
+    img
+      width: 100px
+      height: 100px
+      margin: 0
+      padding: 0
+  
+    
+.shake
+  animation: shake 0.5s infinite
+  &:keyframes
+    0%
+      transform: rotate(20deg)
+    50%
+      transform: rotate(80deg)
+    100%
+      transform: rotate(-100deg) 
+        
+.cart_1
+  z-index: 3
+  width: 100%
+  height: 100%
+  background-color: #000
+  &-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+  &-wrapper
+    background-image: url(/img/load_main/13.png)
+    background-position: center
+    background-size: 100%
+    width: 500px
+    height: 900px
+    margin: 0 auto
+    text-align: center
+    margin-top: 35px
+  &-subtitle
+    color: #FFD75E
+    font-size: 36px
+  &-title
+    font-size: 42px
+    color: #fff
+    margin-top: 150px
+  .one
+    transform: rotate(-180deg)
+  &-img
+    width: 50%
+    height: 20%
+    margin: 0 auto
+
+.display_cart
+  display: none
+  
