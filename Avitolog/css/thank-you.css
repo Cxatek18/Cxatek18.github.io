@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Montserrat-Italic";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Montserrat-Italic.woff2), url(../fonts/Montserrat-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Montserrat-Medium.woff2), url(../fonts/Montserrat-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  font-weight: 900;
+  font-style: normal;
+  src: url(../fonts/Montserrat-Black.woff2), url(../fonts/Montserrat-Black.woff) format("woff");
+}
+body {
+  background-color: #050305;
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.thank {
+  text-align: center;
+  margin-top: 20%;
+}
+.thank-text {
+  font-family: "Montserrat-Black";
+  color: #fff;
+  font-size: 48px;
+}
+.thank-subtext {
+  font-family: "Montserrat-Italic";
+  color: #fff;
+  font-size: 36px;
+}
+.thank-btn {
+  border-radius: 100px;
+  border: 1px solid #68DA23;
+  font-size: 22px;
+  background-color: Transparent;
+  padding: 10px 15px;
+}
+@media screen and (max-width: 414px) {
+  .thank-btn {
+    font-size: 20px;
+  }
+}
+.thank-btn:hover {
+  cursor: pointer;
+  background-color: #68DA23;
+  transition: 0.8s;
+}
+.thank-btn-link {
+  font-family: "Montserrat-Black";
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .thank {
+    margin-top: 45%;
+  }
+}/*# sourceMappingURL=thank-you.css.map */
