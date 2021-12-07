@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./libs/swiper-slide_1/swiper-min.css">
+  <title>Flex-studia</title>
+</head>
+<body>
+
+  <!-- main -->
+  <section class="main" id="main">
+    <div class="main__background">
+      <img src="./images/main/фон главного экрана(1).png" alt="Фон">
+    </div>
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="./images/header/лого Flex studio.png" alt="Лого">
+        </div>
+        <div class="header__links">
+          <a href="#advantages" class="header__link">Преимущества</a>
+          <a href="#portfolio" class="header__link">Портфолио</a>
+          <a href="#calculator" id="link-comuting" class="header__link">Цены</a>
+          <a href="https://www.instagram.com/web_flux_studi/" target="_blank"class="header__link">Блог</a>
+          <a href="#footer" class="header__link">Контакты</a>
+        </div>
+        <a href="tel:+79788727275" class="header__phone">+7(978)-872-72-75</a>
+      </div>
+      <div class="navigation">
+        <div class="navigation__logo">
+          <img src="./images/header/Flex Studio.png" alt="Лого">
+        </div>
+        <a href="tel:+79788727275" class="navigation__phone">+7(978)-872-72-75</a>
+        <div class="burger">
+          <span class="burger__line burger__line__first"></span>
+          <span class="burger__line burger__line__second"></span>
+          <span class="burger__line burger__line__third"></span>
+          <span class="burger__line burger__line__fourth"></span>
+        </div>
+      </div>
+      <div class="main__wrapper">
+        <div class="main__content">
+          <h1 class="main__title">
+            WEB
+            DESIGN
+          </h1>
+          <p class="main__text">
+            Сайты под ключ. Разработка в самое быстрое время.
+            Веб-дизайн без дополнительных трат.Аналитика и
+            продвижение в поисковиках.
+          </p>
+          <button class="main__btn">
+            Оставить заявку
+          </button>
+        </div>
+        <div class="main__img">
+          <img src="./images/main/Компы (2).png" alt="Фото">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- main -->
+
+  <!-- modal -->
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__cross">
+        <div class="modal__cross-first"></div>
+        <div class="modal__cross-second"></div>
+      </div>
+      <p class="modal__title">
+        ВЫ ГОТОВЫ СДЕЛАТЬ ЗАКАЗ? 
+      </p>
+      <div class="modal__window">
+        <div class="modal__window-inputs">
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Контактный телефон">
+          <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <button class="modal__window-button">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+
+  <div class="overlay"></div>
+
+  <!-- burger-menu -->
+  <div class="burger-menu">
+    <div class="burger-menu__list">
+      <a href="#main" class="burger-menu__link">Главная</a>
+      <a href="#advantages" id="mobile-advantages" class="burger-menu__link">Преимущества</a>
+      <a href="#portfolio" id="mobile-portfolio" class="burger-menu__link">Наше портфолио</a>
+      <a href="#stages" class="burger-menu__link">Как мы работаем</a>
+      <a href="#calculator2" class="burger-menu__link">Калькулятор стоимости</a>
+    </div>
+  </div>
+  <!-- burger-menu -->
+
+  <!-- title__block -->
+  <div class="title__block">
+    <div class="container">
+      <p class="text">ПРЕИМУЩЕСТВА </p>
+    </div>
+  </div>
+  <!-- title__block -->
+
+  <!-- advantages -->
+  <div class="advantages" id="advantages">
+    <div class="container">
+      <div class="advantages__wrapper">
+        <div class="advantages__cart">
+          <div class="advantages__img">
+            <img src="./images/advantages/adv1.png" alt="Картинка">
+          </div>
+          <p class="advantages__text">
+            Не первый день в веб разработке.
+            У нас более 100 успешных проекта.
+          </p>
+        </div>
+        <div class="advantages__cart">
+          <div class="advantages__img">
+            <img src="./images/advantages/adv2.png" alt="Картинка">
+          </div>
+          <p class="advantages__text">
+            Чистый код.
+            Мы сами пишем код, из-за чего 
+            сайт легко грузится на всех устройствах.
+          </p>
+        </div>
+        <div class="advantages__cart">
+          <div class="advantages__img">
+            <img src="./images/advantages/adv3.png" alt="Картинка">
+          </div>
+          <p class="advantages__text">
+            Сайт под защитой. 
+            Мы посвещаем много времени, 
+            стараясь добиться защищенности 
+            ващего сайта. 
+          </p>
+        </div>
+        <div class="advantages__cart">
+          <div class="advantages__img">
+            <img src="./images/advantages/adv4.png" alt="Картинка">
+          </div>
+          <p class="advantages__text">
+            Уникальный дизайн.
+            Анализируем конкурентов, 
+            пытаясь добиться поистине 
+            неповторимого дизайна.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- advantages -->
+
+  <!-- swiper -->
+  <div class="swiper mySwiper1" id="advantages2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-slide__img">
+          <img src="./images/advantages/adv1.png" alt="Картинка">
+        </div>
+        <p class="swiper-slide__text">
+          Не первый день в веб разработке.
+          У нас более 100 успешных проекта.
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-slide__img">
+          <img src="./images/advantages/adv2.png" alt="Картинка">
+        </div>
+        <p class="swiper-slide__text">
+          Чистый код.
+          Мы сами пишем код, из-за чего 
+          сайт легко грузится на всех устройствах.
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-slide__img">
+          <img src="./images/advantages/adv3.png" alt="Картинка">
+        </div>
+        <p class="swiper-slide__text">
+          Сайт под защитой. 
+          Мы посвещаем много времени, 
+          стараясь добиться защищенности 
+          ващего сайта. 
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-slide__img">
+          <img src="./images/advantages/adv4.png" alt="Картинка">
+        </div>
+        <p class="swiper-slide__text">
+          Уникальный дизайн.
+          Анализируем конкурентов, 
+          пытаясь добиться поистине 
+          неповторимого дизайна.
+        </p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- swiper -->
+
+  <!-- title__block -->
+  <div class="title__block">
+    <div class="container">
+      <p class="text">НАШЕ ПОРТФОЛИО</p>
+    </div>
+  </div>
+  <!-- title__block -->
+
+  <!-- portfolio -->
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio__wrapper">
+        <div class="portfolio__cart">
+          <a href="http://maksim-alakshin.ru/" target="_blank" class="portfolio__link">
+            <div class="portfolio__img">
+              <img src="./images/portfolio/port3.png" alt="website">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__cart">
+          <a href="https://buddystudy.ru/" target="_blank" class="portfolio__link">
+            <div class="portfolio__img">
+              <img src="./images/portfolio/port2.png" alt="website">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__cart">
+          <a href="https://magazinsmesiteley.ru/" target="_blank" class="portfolio__link">
+            <div class="portfolio__img">
+              <img src="./images/portfolio/port1.png" alt="website">
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/web_flux_studi/" target="_blank" class="portfolio__watch">
+        <button class="portfolio__btn">
+          Смотреть ещё
+        </button>
+      </a>
+    </div>
+  </div>
+  <!-- portfolio -->
+
+  <!-- portfolio-mobile -->
+  <div class="portfolio-mobile" id="portfolio-mobile">
+    <div class="container">
+      <div class="portfolio-mobile__wrapper">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="http://maksim-alakshin.ru/" target="_blank" class="swiper-slide__link">
+                <div class="swiper-slide__img">
+                  <img src="./images/portfolio/Desktop - 1 1.png" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://buddystudy.ru/" target="_blank" class="swiper-slide__link">
+                <div class="swiper-slide__img">
+                  <img src="./images/portfolio/Screenshot_1 1.png" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://magazinsmesiteley.ru/" target="_blank" class="swiper-slide__link">
+                <div class="swiper-slide__img">
+                  <img src="./images/portfolio/Screenshot_2 1.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/web_flux_studi/" target="_blank" class="portfolio__watch">
+        <button class="portfolio__btn">
+          Смотреть ещё
+        </button>
+      </a>
+    </div>
+  </div>
+  <!-- portfolio-mobile -->
+
+  <!-- title__block -->
+  <div class="title__block">
+    <div class="container">
+      <p class="text">Как мы работаем</p>
+    </div>
+  </div>
+  <!-- title__block -->
+
+  <!-- stages -->
+  <div class="stages" id="stages">
+    <div class="container">
+      <div class="stages__wrapper">
+        <div class="stages__cart">
+          <div class="stages__cart-img">
+            <img src="./images/stages/First image.png" alt="Фото">
+          </div>
+          <div class="stages__circle">
+            <div class="stages__circle-first">
+              <img src="./images/stages/1.png" alt="">
+            </div>
+            <div class="stages__circle-second">
+              <img src="./images/stages/2.png" alt="">
+            </div>
+            <div class="stages__circle-third">
+              <img src="./images/stages/3.png" alt="">
+            </div>
+          </div>
+          <div class="stages__text">
+            <p class="stages__title">
+              Общение с клиетом
+            </p>
+            <p class="stages__subtitle">
+              Перед началом работы мы обсудим 
+              с вами организационные вопросы. 
+              С помощью видео трансляции, либо 
+              брифа узнаем какой сайт вам нужет, 
+              сколько блоков в нем будет и кто 
+              потенциальные будущие клиенты вашего сайта.
+            </p>
+          </div>
+        </div>
+        <div class="stages__cart stages__reverse">
+          <div class="stages__cart-img">
+            <img src="./images/stages/second img.png" alt="Фото">
+          </div>
+          <div class="stages__circ">
+            <div class="stages__circ-one">
+              <img src="./images/stages/1.png" alt="">
+            </div>
+            <div class="stages__circ-two">
+              <img src="./images/stages/2.png" alt="">
+            </div>
+            <div class="stages__circ-three">
+              <img src="./images/stages/3.png" alt="">
+            </div>
+          </div>
+          <div class="stages__text">
+            <p class="stages__title">
+              Прототипирование и дизайн
+            </p>
+            <p class="stages__subtitle">
+              После того как мы обговорим с 
+              вами все нюансы, переходим к 
+              следующему этапу. Делаем прототип 
+              и основанный на нем дизайн, в 
+              этом нам поможет бриф, а так же 
+              анализ рынка конкурентов. 
+            </p>
+          </div>
+        </div>
+        <div class="stages__cart">
+          <div class="stages__cart-img">
+            <img src="./images/stages/third img.png" alt="Фото">
+          </div>
+          <div class="stages__circle">
+            <div class="stages__circle-first">
+              <img src="./images/stages/1.png" alt="">
+            </div>
+            <div class="stages__circle-second">
+              <img src="./images/stages/2.png" alt="">
+            </div>
+            <div class="stages__circle-third">
+              <img src="./images/stages/3.png" alt="">
+            </div>
+          </div>
+          <div class="stages__text">
+            <p class="stages__title">
+              Вёрстка и программирование
+            </p>
+            <p class="stages__subtitle">
+              После утверддения дизайна мы переходим 
+              непосредственно к технической части, 
+              а именно переносим дизайн макет 
+              в полностью работающий сайт.
+            </p>
+          </div>
+        </div>
+        <div class="stages__cart stages__reverse">
+          <div class="stages__cart-img">
+            <img src="./images/stages/fourth img.png" alt="Фото">
+          </div>
+          <div class="stages__text">
+            <p class="stages__title">
+              Сдача проекта
+            </p>
+            <p class="stages__subtitle">
+              Последняя часть заключается в том, что мы передаем вам 
+              сопроводительные документы и объяснения по пользованию сайтом.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- stages -->
+
+  <!-- title__block -->
+  <div class="title__block">
+    <div class="container">
+      <p class="text">Калькулятор стоимости</p>
+      <p class="subtitle">
+        Узнайте примерную стоимость вашего сайта
+      </p>
+    </div>
+  </div>
+  <!-- title__block -->
+
+  <!-- calculator -->
+  <div class="calculator" id="calculator">
+    <div class="container">
+      <div class="calculator__wrapper">
+        <div class="calculator__work">
+          <div class="calculator__work-link" >
+            <input type="radio" name="a" id="land"  class="calculator__work-input land" checked>
+            <label class="calculator__work-text" for="land">Лендинг</label>
+          </div>
+          <div class="calculator__work-link">
+            <input type="radio" name="a" id="business__card"  class="calculator__work-input business__card">
+            <label class="calculator__work-text" for="business__card">Визитка</label>
+          </div>
+          <div class="calculator__work-link">
+            <input type="radio" name="a" id="multipage"  class="calculator__work-input multipage">
+            <label class="calculator__work-text" for="multipage">Многостраничный</label>
+          </div>
+          <div class="calculator__work-link">
+            <input type="radio" name="a" id="online__store"  class="calculator__work-input online__store">
+            <label class="calculator__work-text" for="online__store">Интернет-магазин</label>
+          </div>
+          <button class="calculator__work-btn">
+            Оставить заявку
+          </button>
+        </div>
+        <div class="calculator__estimate">
+          <div class="calculator__estimate-counter">
+            <p class="calculator__estimate-page">
+              1
+            </p>
+            <p class="calculator__estimate-text">
+              блоков
+            </p>
+          </div>
+          <input class="calculator__estimate-range" name="calculator__estimate-range" type="range" step="1" min="1" max="30" value="1">
+          <div class="calculator__estimate-check">
+            <input type="checkbox" id="adaptiv" class="input__checkbox adaptive">
+            <label class="input__text" for="adaptiv">С адаптивом под мобилки</label>
+          </div>
+          <div class="calculator__estimate-check">
+            <input type="checkbox" id="verst" class="input__checkbox layout">
+            <label class="input__text" for="verst">Только вёрстка</label>
+          </div>
+          <div class="calculator__estimate-check">
+            <input type="checkbox" id="dis" class="input__checkbox design">
+            <label class="input__text" for="dis">Только дизайн</label>
+          </div>
+        </div>
+        <div class="calculator__img">
+          <img src="./images/calculator/Group 55.png" alt="Фото">
+          <p class="calculator__img-price">2500</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- calculator -->
+
+  <!-- computing -->
+  <div class="computing" id="calculator2">
+    <div class="container">
+      <div class="computing__wrapper">
+        <form class="computing__work">
+          <select name="services" class="computing__services">
+            <option selected>Выберете услугу</option>
+            <option class="land-mobile">Лендинг</option>
+            <option class="business__card-mobile">Визитка</option>
+            <option class="multipage-mobile" value="three">Многостраничный</option>
+            <option class="online__store-mobile" value="four">Интернет-магазин</option>
+          </select>
+        </form> 
+        <div class="computing__estimate">
+          <div class="computing__estimate-counter">
+            <p class="computing__estimate-page">
+              1
+            </p>
+            <p class="computing__estimate-text">
+              блоков
+            </p>
+          </div>
+          <input class="computing__estimate-range" name="computing__estimate-range" type="range" step="1" min="1" max="30" value="1">
+          <div class="computing__estimate-check">
+            <input type="checkbox" id="adaptive-mobile" class="input__checkbox adaptive-mobile">
+            <label class="input__text2" for="adaptive-mobile">С адаптивом под мобилки</label>
+          </div>
+          <div class="computing__estimate-check">
+            <input type="checkbox" id="layout-mobile" class="input__checkbox layout-mobile">
+            <label class="input__text2" for="layout-mobile">Только вёрстка</label>
+          </div>
+          <div class="computing__estimate-check">
+            <input type="checkbox" id="dis-mobile" class="input__checkbox design-mobile">
+            <label class="input__text2" for="dis-mobile">Только дизайн</label>
+          </div>
+        </div>
+        <div class="computing__counter">
+          <p class="computing__counter-text">
+            Итого
+          </p>
+          <p class="computing__counter-price">
+            2500
+          </p>
+        </div>
+      </div>
+      <button class="computing__button">
+        Оставить заявку
+      </button>
+    </div>
+  </div>
+  <!-- computing -->
+
+  <!-- footer -->
+  <div class="footer" id="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__wrapper-links">
+          <a href="#advantages" id="mobile-footer-advantages" class="footer__wrapper-link">Преимущества</a>
+          <a href="#portfolio" id="mobile-footer-portfolio" class="footer__wrapper-link">Портфолио</a>
+          <a href="#calculator" class="footer__wrapper-link">Калькулятор</a>
+          <a href="https://www.instagram.com/web_flux_studi/" target="_blank" class="footer__wrapper-link">Блог</a>
+          <a href="#footer" class="footer__wrapper-link">Котакты</a>
+        </div>
+        <div class="footer__wrapper-social">
+          <a href="#" class="footer__wrapper-media">
+            <div class="footer__wrapper-img">
+              <img src="./images/footer/vk.png" alt="vk">
+            </div>
+          </a>
+          <a href="#" class="footer__wrapper-media">
+            <div class="footer__wrapper-img">
+              <img src="./images/footer/telegramm.png" alt="telegramm">
+            </div>
+          </a>
+          <a href="#" class="footer__wrapper-media">
+            <div class="footer__wrapper-img">
+              <img src="./images/footer/watsapp.png" alt="watsapp">
+            </div>
+          </a>
+        </div>
+        <a href="tel:+79788727275" class="footer__wrapper-phone">+7(978)-872-72-75</a>
+      </div>
+      <button class="footer__button">Позвоните нам</button>
+    </div>
+  </div>
+  <!-- footer -->
+
+  <script src="./js/main.js"></script>
+  <script src="./libs/swiper-slide_1/swiper-min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+      var swiper = new Swiper(".mySwiper2", {});
+  </script>
+</body>
+</html>
