@@ -1,0 +1,261 @@
+@import '__sass-grid'
+@import 'fonts'
+@import vars
+
+// --- html
+html
+  scroll-behavior: smooth
+// --- html
+
+// --- body
+body
+  font-family: 'Arial'
+  margin: 0
+  padding: 0
+// --- body
+
+// --- img
+img
+  max-width: 100%
+  margin: 0 auto
+// --- img
+
+// --- a
+a
+  text-decoration: none
+// --- a
+
+// --- container 
+.container
+  max-width: 1440px
+  margin: 0 auto
+  width: 90%
+// --- container
+
+// header style
+.header
+  background-color: $second-color
+  &__wrapper
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 30px
+    +media(768px)
+      display: block
+  .burger
+    display: none
+    +media(414px)
+      display: flex
+      width: 40px
+      height: 40px
+      cursor: pointer
+      position: relative
+      z-index: 12
+      position: fixed
+      margin-left: auto
+      right: 10px
+      border: 1px solid #000
+      border-radius: 5px
+      &:hover
+        -webkit-animation: swinging_360 4s ease
+        animation: swinging_360 1.2s ease
+    &__line
+      display: block
+      width: 70%
+      height: 2px
+      position: absolute
+      background-color: #000
+      left: 0
+      transition: 0.8s
+      color: #fff
+      &__first
+        top: 13px
+        left: 5px
+      &__second
+        left: 5px
+        top: 50%
+        transform: translateY(-50%)
+      &__third
+        left: 5px
+        top: 50%
+        transform: translateY(-50%)
+      &__fourth
+        left: 5px
+        bottom: 13px
+    &:hover
+      transition: all 0.5s
+  &__links
+    +media(768px)
+      text-align: center
+    +media(414px)
+      display: none
+    &-link
+      color: $white-color
+      font-size: 16px
+      font-family: 'Comfortaa-Medium'
+      margin-right: 30px
+      +media(768px)
+        margin-right: 10px 
+  &__connection
+    +media(768px)
+      text-align: center
+      margin-top: 20px
+    &-phone
+      font-size: 16px
+      color: $white-color
+      font-family: 'Comfortaa-Medium'
+      margin-left: 50px
+      +media(414px)
+        display: none
+    &-adaptive
+      text-align: center
+      margin-top: 15px
+      .phone
+        font-size: 16px
+        color: $white-color
+        font-family: 'Comfortaa-Medium'
+    &-btn
+      outline: none
+      border: 1px solid $white-color
+      border-radius: 20px
+      font-size: 16px
+      color: $white-color
+      font-family: 'Comfortaa-Medium'
+      background-color: $second-color
+      padding: 5px 20px
+      &:hover
+        background-color: $white-color
+        color: $second-color
+        transition: 0.8s
+        cursor: pointer
+    
+// header style
+
+// main style
+.main
+  &__wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    +media(414px)
+      display: block
+  &__content
+    max-width: 600px
+    +media(768px)
+      max-width: 400px
+    +media(640px)
+      max-width: 300px
+    +media(414px)
+      max-width: 100%
+    &-title
+      color: $second-color
+      font-family: 'Comfortaa-Bold'
+      +media(414px)
+        text-align: center
+    &-subtitle
+      font-size: 18px
+      color: $second-color
+      font-family: 'Comfortaa-Medium'
+      line-height: 30px
+      +media(640px)
+        font-size: 16px
+      +media(414px)
+        text-align: center
+    &-btn
+      outline: none
+      background-color: $second-color
+      border: none
+      color: #fff
+      font-size: 18px
+      border-radius: 20px
+      padding: 5px 30px
+      margin: 30px auto
+      border: 1px solid $second-color
+      +media(414px)
+        display: flex
+        justify-content: center
+      &:hover
+        cursor: pointer
+        background-color: $white-color
+        color: $second-color
+        border: 1px solid $second-color
+        transition: 0.8s
+  img
+    width: 650px
+// main style
+
+// vacancy style
+.vacancy
+  background-color: $second-color
+  &__title
+    color: $white-color
+    text-align: center
+    font-size: 36px
+    font-family: 'Comfortaa-Medium'
+    padding: 30px
+  &__wrapper
+  &__subtitle
+    text-align: center
+    max-width: 800px
+    color: $white-color
+    font-size: 18px
+    font-family: 'Comfortaa-Light'
+    margin: -30px auto
+  &__carts
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: 50px
+    &-cart
+      background-color: $white-color
+      padding: 10px 10px
+      flex-basis: 20%
+      margin-top: 30px
+      height: 180px
+      &-img
+        text-align: center
+        color: $second-color
+        font-size: 18px
+        font-family: 'Comfortaa-Medium'
+    &-salary
+      text-align: center
+      color: $second-color
+      font-size: 16px
+      font-family: 'Comfortaa-Medium'
+    &-job
+      text-align: center
+      color: $second-color
+      font-size: 18px
+      font-family: 'Comfortaa-Medium'
+    &-btns
+      display: flex
+      justify-content: space-between
+      .btn-detail
+        background-color: $second-color
+        color: $white-color
+        font-size: 16px
+        padding: 5px 10px
+        border: none
+        border-radius: 20px
+        &:hover
+          background-color: $white-color
+          color: $second-color
+          transition: 0.8s
+          cursor: pointer
+      .btn-respond
+        background-color: $second-color
+        color: $white-color
+        font-size: 16px
+        padding: 5px 10px
+        border: none
+        border-radius: 20px
+        &:hover
+          background-color: $white-color
+          color: $second-color
+          transition: 0.8s
+          cursor: pointer
+
+
+    
+
+// vacancy style
