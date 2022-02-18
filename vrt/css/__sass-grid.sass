@@ -1,0 +1,11 @@
+=media($width)
+  @media screen and ( max-width: $width)
+    @content
+
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
