@@ -1,0 +1,641 @@
+@import '__sass-grid'
+@import 'fonts'
+@import vars
+
+// --- html
+html
+  scroll-behavior: smooth
+// --- html
+
+// --- body
+body
+  font-family: 'Arial'
+  margin: 0
+  padding: 0
+  background-color: $second-color
+// --- body
+
+// --- img
+img
+  max-width: 100%
+  margin: 0 auto
+// --- img
+
+// --- a
+a
+  text-decoration: none
+// --- a
+
+// --- container 
+.container
+  max-width: 1440px
+  margin: 0 auto
+  width: 90%
+// --- container
+
+// btn-blue
+.btn-blue
+  background-color: $first-color
+  border: none
+  color: #fff
+  border-radius: 55px 
+// btn-blue
+
++keyframes(showBurger)
+  100%
+    left: 0px
+
++keyframes(showImg)
+  100%
+    display: none
+
+// menu 
+.menu
+  display: none
+  +media(1024px)
+    position: fixed
+    overflow-y: auto
+    z-index: 20
+    display: none
+    flex-flow: column
+    height: 100%
+    background-color: $second-color
+    width: 30%
+    text-align:  center
+    left: -100%
+    -webkit-animation: showBurger 2.5s ease
+    animation: showBurger 0.7s ease
+    animation-fill-mode: forwards
+    +media(414px)
+      width: 70%
+  &__link
+    color: #fff
+    font-size: 20px
+    font-family: 'NunitoSans-Regular'
+    margin-top: 40px
+    +media(414px)
+      font-size: 16px
+// menu
+
+// display
+.display
+  display: none
+  transition: 0.8s
+// display
+
+// overlay
+.overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  background-color: rgba(0, 0, 0, 0.5)
+// overlay
+
+// header
+.header
+  background-color: $second-color
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 25px
+    align-items: center
+    font-family: 'NunitoSans-Regular'
+    +media(414px)
+      display: flex
+      justify-content: center
+  &__logo
+    color: #fff
+    font-size: 28px
+    +media(414px)
+      font-size: 24px
+      text-align: center
+  &__links
+    +media(1024px)
+      display: none
+  &__link
+    color: #fff
+    font-size: 20px
+    margin-left: 20px
+  &__phone
+    +media(1024px)
+      display: none
+    &-link
+      color: #fff
+      font-size: 20px
+  .burger
+    display: none
+    +media(1024px)
+      display: flex
+      width: 40px
+      height: 40px
+      cursor: pointer
+      position: relative
+      z-index: 12
+      position: fixed
+      margin-left: auto
+      right: 80px
+      border: 1px solid #CCD4FF
+      border-radius: 5px
+      +media(414px)
+        right: 10px
+      &:hover
+        -webkit-animation: swinging_360 4s ease
+        animation: swinging_360 1.2s ease
+    &__line
+      display: block
+      width: 70%
+      height: 2px
+      position: absolute
+      background-color: #CCD4FF
+      left: 0
+      transition: 0.8s
+      color: #CCD4FF
+      &__first
+        top: 13px
+        left: 5px
+      &__second
+        left: 5px
+        top: 50%
+        transform: translateY(-50%)
+      &__third
+        left: 5px
+        top: 50%
+        transform: translateY(-50%)
+      &__fourth
+        left: 5px
+        bottom: 13px
+    &:hover
+      transition: all 0.5s
+  .burger__active
+    transition: 0.5s
+    .burger__line
+      &__first
+        opacity: 0
+        left: 50px
+        transition: 0.9s
+      &__fourth
+        opacity: 0
+        left: 50px
+        transition: 0.9s
+      &__second
+        transform: translateY(-50%) rotate(45deg)
+      &__third
+        transform: translateY(-50%) rotate(-45deg)
+// header
+
+// main
+.main
+  background-image: url(../images/main/4.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  height: 800px
+  +media(1024px)
+    height: 600px
+    background-image: url(../images/main/3.jpg)
+  +media(768px)
+    height: 400px
+  +media(414px)
+    height: 100%
+    width: 100%
+  &__wrapper
+    padding-top: 10%
+    +media(320px)
+      padding-top: 0px
+  &__content
+    &-title
+      font-family: 'OpenSans-Bold'
+      font-size: 60px
+      height: 40px
+      margin-top: 0px
+      max-width: 700px
+      color: $second-color
+      +media(1024px)
+        max-width: 80%
+        text-align: center
+        margin: 0 auto
+        color: #fff
+      +media(768px)
+        font-size: 36px
+      +media(414px)
+        max-width:  100%
+        font-size: 26px
+      +media(320px)
+        padding-top: 15px
+    &-subtitle
+      font-family: 'OpenSans-Medium'
+      color: $second-color
+      font-size: 36px
+      width: 350px
+      margin-top: 160px
+      +media(1024px)
+        text-align: center
+        margin: 160px auto 40px
+        color: #fff
+      +media(768px)
+        font-size: 24px
+        margin: 60px auto 40px
+      +media(414px)
+        font-size: 18px
+        width: 80%
+    &-btn
+      +media(1024px)
+        display: flex
+        justify-content: center
+      +media(414px)
+        padding-bottom: 20px
+      .btn
+        font-family: 'OpenSans-Regular'
+        color: #fff
+        background-color: $first-color
+        font-size: 22px
+        border: none
+        padding: 5px 25px
+        border-radius: 55px
+        +media(320px)
+          font-size: 18px
+        &:hover
+          cursor: pointer
+          transition: 1s
+          color: $first-color
+          background-color: #CCD4FF
+// main
+
+// calculations
+.calculations
+  &__wrapper
+    margin-top: 50px
+    margin-bottom: 40px
+    margin-bottom: 40px
+    .line__buttom
+      margin-top: 80px
+      +media(414px)
+        margin-top: 40px
+    .help__text
+      font-size: 34px
+      +media(768px)
+        font-size: 26px
+      +media(320px)
+        font-size: 20px
+  &__content
+    display: flex
+    justify-content: center
+    align-items: center
+  &__text
+    color: #fff
+    font-family: 'OpenSans-Bold'
+    font-size: 38px
+    width: 500px
+    text-align: center
+    margin-top: -10px
+    +media(1024px)
+      width: 100%
+      margin-top: 40px
+    +media(768px)
+      font-size: 26px
+    +media(414px)
+      margin-top: 30px
+    +media(320px)
+      font-size: 20px
+  &__btn
+    display: flex
+    justify-content: center
+    margin: -25px auto
+    text-align: center
+    font-size: 20px
+    padding: 5px 30px
+    +media(414px)
+      margin: -5px auto
+    +media(320px)
+      font-size: 18px
+    &:hover
+      cursor: pointer
+      transition: 1s
+      color: $first-color
+      background-color: #CCD4FF
+  &__img
+    +media(1024px)
+      display: none
+  &__line
+    display: none
+    +media(1024px)
+      display: block
+      height: 2px
+      width: 100%
+      background-color: $first-color
+// calculations
+
+// advantagesMob
+.advantagesMob
+  display: none
+  +media(1024px)
+    display: block
+    background-color: #fff
+  &__title
+    font-size: 32px
+    text-align: center
+    font-family: 'Mulish-Regular'
+    padding-top: 20px
+  &__content
+    text-align: center
+    padding-bottom: 20px
+  &__benefit
+    padding-top: 20px
+    padding-bottom: 40px
+    border: 3px inset $first-color
+    margin-bottom: 20px
+    margin: 20px auto
+    max-width: 70%
+    +media(414px)
+      max-width: 100%
+    &-text
+      font-family: 'Mulish-Regular'
+      font-size: 20px
+      max-width: 300px
+      margin: 0 auto
+      +media(414px)
+        font-size: 18px
+// advantagesMob
+
+// type
+.type
+  background-color: $second-color
+  &__wrapper
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 100px
+    +media(768px)
+      margin-top: 30px
+  &__first
+    margin-right: 5px
+    +media(1024px)
+      margin-right: 0px
+  &__second
+    margin-left: 5px
+    +media(1024px)
+      margin-left: 0px
+  &__cart
+    margin-top: 5px
+  &__btn
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    font-family: 'Mulish-Regular'
+    border: none
+    color: #000
+    font-size: 20px
+    width: 525px
+    padding: 20px 40px
+    transition: 0.8s
+    +media(414px)
+      width: 250px
+    &:hover
+      cursor: pointer
+      transition: 0.8s
+  .dark_button
+    background-color: $first-color
+    color: #CCD4FF
+    &:hover
+      cursor: pointer
+      background-color: #CCD4FF
+      transition: 1s
+      color: $first-color
+  .light_button
+    background-color: #CCD4FF
+    color: $first-color
+    &:hover
+      cursor: pointer
+      background-color: $first-color
+      transition: 1s
+      color: #CCD4FF
+// type
+
+// swiper
+.swiper 
+  width: 100%
+  height: 100%
+  background-color: #fff
+  margin-top: 40px
+
+.swiper__title
+  font-size: 32px
+  text-align: center
+  font-family: 'Mulish-Regular'
+  padding-top: 20px
+  padding-bottom: 35px
+  +media(414px)
+    padding-bottom: 10px
+    padding-top: 10px
+
+.swiper-slide 
+  text-align: center
+  font-size: 18px
+  padding-bottom: 80px
+  /* Center slide text vertically */
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+  +media(414px)
+    padding-bottom: 40px
+
+.swiper-slide img
+  display: block
+  width: 327px
+  height: 455px
+  object-fit: cover
+  border-radius: 24px
+  +media(414px)
+    width: 275px
+  +media(320px)
+    width: 225px  
+// swiper
+
+// assortment
+.assortment
+  background-color: #fff
+  margin-top: -35px
+  &__title
+    font-size: 32px
+    text-align: center
+    font-family: 'Mulish-Regular'
+    padding-top: 20px
+  &__wrapper
+    padding-top: 10px
+    padding-bottom: 30px
+  &__cart
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    +media(1024px)
+      border-top: 1px solid $first-color
+  &__content
+    &-title
+      font-size: 28px
+      +media(1024px)
+        text-align: center
+  &__texts
+    max-width: 550px
+  &__text
+    font-size: 22px
+    font-family: 'OpenSans-Regular'
+    +media(1024px)
+      text-align: center
+    +media(640px)
+      font-size: 18px
+    +media(414px)
+      font-size: 16px
+    +media(320px)
+      font-size: 14px
+// assortment
+
+// form
+.form
+  background-image: url(../images/form/1.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  height: 689px
+  +media(1024px)
+    height: 100%
+  +media(768px)
+    background-image: none
+    background-color: #CCD4FF
+  &__title
+    font-size: 32px
+    text-align: center
+    font-family: 'Mulish-Regular'
+    padding-top: 20px
+    +media(1024px)
+      padding-top: 0px
+    +media(768px)
+      color: $first-color
+  &__wrapper
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    flex-direction: column
+    padding-top: 60px
+    +media(1024px)
+      padding-top: 10px
+    input
+      font-size: 28px
+      border: 1px solid $second-color
+      background-color: Transparent
+      width: 60%
+      margin: 20px auto
+      padding: 10px 10px
+      &:focus
+        outline: none
+      +media(1024px)
+        margin: 5px auto
+      +media(768px)
+        color: $first-color
+        border: 1px solid $first-color
+      +media(640px)
+        font-size: 22px
+      +media(414px)
+        width: 90%
+  &__button
+    margin-top: 80px
+    +media(1024px)
+      padding-bottom: 20px
+      margin-top: 40px
+  &__btn
+    display: flex
+    margin: 0px auto
+    font-size: 20px
+    padding: 10px 30px
+    transition: 0.8s
+    color: #fff
+    background-color: $first-color
+    border-radius: 55px
+    border: none
+    +media(320px)
+      font-size: 18px
+    &:hover
+      cursor: pointer
+      background-color: #CCD4FF
+      transition: 1s
+      color: $first-color
+      +media(768px)
+        border: 1px solid $first-color
+// form
+
+// footer
+.footer
+  &__wrapper
+  &__up
+    display: flex
+    justify-content: space-between
+    margin-top: 5px
+    +media(640px)
+      display: block
+      text-align: center
+    &-links
+      display: flex
+      +media(640px)
+        justify-content: center
+        margin-bottom: 10px
+      +media(320px)
+        flex-wrap: wrap
+        text-align: center
+      .first
+        color: #fff
+        font-size: 24px
+        font-family: 'NunitoSans-Regular'
+        margin-right: 40px
+        +media(414px)
+          margin-right: 20px
+          font-size: 18px
+      .second
+        color: #fff
+        font-size: 24px
+        font-family: 'NunitoSans-Regular'
+        +media(414px)
+          font-size: 18px
+    &-phone
+      font-family: 'NunitoSans-Regular'
+      color: #fff
+      font-size: 24px
+      margin-top: 5px
+      +media(414px)
+        font-size: 20px
+  &__down
+    display: flex
+    margin-top: 5px
+    +media(640px)
+      justify-content: center
+      margin-top: 10px
+    +media(320px)
+      flex-wrap: wrap
+      text-align: center
+    &-three
+      color: #fff
+      font-size: 24px
+      font-family: 'NunitoSans-Regular'
+      margin-right: 60px
+      +media(414px)
+        font-size: 18px
+    &-four
+      color: #fff
+      font-size: 24px
+      font-family: 'NunitoSans-Regular'
+      +media(414px)
+        font-size: 18px
+// footer
